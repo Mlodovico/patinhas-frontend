@@ -1,12 +1,16 @@
 <template>
-    <div class="logInModal">
+    <div class="logInModal" @click="handleClickLogin">
         <div class="modal"></div>
     </div>
 </template>
 
-<script>
-export default {
-    name: 'LogInModal',
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const showLogInModal = ref(false)
+
+const handleClickLogin = () => {
+    showLogInModal.value = false
 }
 </script>
 

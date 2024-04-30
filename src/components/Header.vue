@@ -11,6 +11,7 @@ const handleClickLogin = () => {
 const handleClickSignIn = () => {
     showSignInModal.value = !showSignInModal.value
 }
+
 </script>
 <template>
     <div class="header">

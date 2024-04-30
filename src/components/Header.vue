@@ -1,19 +1,29 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import LogInModal from './LogInModal.vue'
+
+const showLogInModal = ref(false)
+const showSignInModal = ref(false)
+const handleClickLogin = () => {
+    showLogInModal.value = !showLogInModal.value
+}
+
+const handleClickSignIn = () => {
+    showSignInModal.value = !showSignInModal.value
+}
+</script>
 <template>
     <div class="header">
         <div class="logo">
             <h1>Patinhas</h1>
         </div>
         <div class="buttons">
-            <button>Cadastrar</button>
+            <button @click="handleClickLogin()">Cadastrar</button>
             <button>Logar</button>
         </div>
+        <LogInModal v-if='showLogInModal' @close='handleClickLogin'></LogInModal>
     </div>
 </template>
-
-<script>
-export default {}
-</script>
-
 <style>
 .header {
     width: 100%;

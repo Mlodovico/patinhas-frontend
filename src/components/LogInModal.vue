@@ -2,15 +2,15 @@
     <div class="logInModal" @click="handleClickLogin">
         <div class="modal">
             <div class="close-button">
-                <p>Fechar</p>
+                <v-icon name="close" scale="1.5" />
             </div>
             <div class="form">
                 <h1>Acessar sua conta</h1>
                 <p>E-mail ou CPF</p>
-                <input type="text">
+                <input v-model="email" placeholder="E-mail ou CPF">
                 <p>Senha</p>
-                <input type="password">
-                <button>Entrar</button>
+                <input v-model="password" type="password" placeholder="Senha">
+                <button @click="handleClickLogin">Entrar</button>
             </div>
         </div>
     </div>
@@ -20,8 +20,11 @@
 import { ref } from 'vue'
 
 const showLogInModal = ref(false)
+const email = ref('');
+const password = ref('');
 
 const handleClickLogin = () => {
+    console.log(email.value, password.value)
     showLogInModal.value = false
 }
 </script>
@@ -45,6 +48,13 @@ const handleClickLogin = () => {
     margin: 10px;
 }
 
+.close-button button {
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    color: black
+}
+
 .modal {
     background: white;
     border-radius: 12px;
@@ -52,15 +62,15 @@ const handleClickLogin = () => {
 }
 
 .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5rem;
+    padding: 3rem;
+}
+
+.form p {
+    margin-top: 15px;
 }
 
 .form input {
-    margin-top: 10px;
+    width: 100%;
     border-radius: 4px;
     border: 1px solid gray;
     padding: 8px;
@@ -72,9 +82,12 @@ const handleClickLogin = () => {
     justify-content: center;
     width: 100%;
     height: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 4px;
     border: 1px solid red;
     background: red;
+    font-weight: 600;
+        color: azure;
+        font-size: 18px;
 }
 </style>

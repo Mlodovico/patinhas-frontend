@@ -1,8 +1,8 @@
 <template>
     <div class="logInModal" @click="handleClickLogin">
         <div class="modal">
-            <div class="close-button">
-                <v-icon name="close" scale="1.5" />
+            <div class="io-close-circle-outline">
+                <VIcon name="close" scale="1.5" />
             </div>
             <div class="form">
                 <h1>Acessar sua conta</h1>

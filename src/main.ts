@@ -13,7 +13,7 @@ addIcons(FaFlag, RiZhihuFill, IoLogoGithub)
 const app = createApp(App)
 
 app.use(createPinia())
-app.component('v-icon', OhVueIcon)
+app.component('VIcon', OhVueIcon)
 app.use(router)
 
 app.mount('#app')

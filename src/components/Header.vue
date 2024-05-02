@@ -14,7 +14,7 @@ const handleClickSignIn = () => {
 
 </script>
 <template>
-    <div class="header">
+    <div class="app-header">
         <div class="logo">
             <h1>Patinhas</h1>
         </div>
@@ -26,7 +26,7 @@ const handleClickSignIn = () => {
     </div>
 </template>
 <style>
-.header {
+.app-header {
     width: 100%;
     display: flex;
     align-items: center;

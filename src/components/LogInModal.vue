@@ -17,9 +17,9 @@
 </template>
 
 <script setup lang="ts">
+import { showLogInModal } from './Header.vue'
 import { ref } from 'vue'
 
-const showLogInModal = ref(false)
 const email = ref('');
 const password = ref('');
 

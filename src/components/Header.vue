@@ -1,14 +1,15 @@
-<script setup lang="ts">
+<script lang="ts">
+import { reactive } from 'vue'
 import { ref } from 'vue'
 import LogInModal from './LogInModal.vue'
 
-const showLogInModal = ref(false)
-const showSignInModal = ref(false)
-const handleClickLogin = () => {
+export const showLogInModal = reactive({ value: false })
+export const showSignInModal = reactive({ value: false })
+export const handleClickLogin = () => {
     showLogInModal.value = !showLogInModal.value
 }
 
-const handleClickSignIn = () => {
+export const handleClickSignIn = () => {
     showSignInModal.value = !showSignInModal.value
 }
 
@@ -22,7 +23,7 @@ const handleClickSignIn = () => {
             <button @click="handleClickLogin()">Cadastrar</button>
             <button>Logar</button>
         </div>
-        <LogInModal v-if='showLogInModal' @close='handleClickLogin'></LogInModal>
+        <LogInModal v-if='showLogInModal' @close='handleClickLogin()'></LogInModal>
     </div>
 </template>
 <style>

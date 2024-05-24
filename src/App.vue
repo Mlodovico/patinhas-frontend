@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue';
 
 </script>
@@ -9,7 +8,7 @@ import Header from './components/Header.vue';
 
   <nav>
     <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/about">Sobre</RouterLink>
   </nav>
 
 

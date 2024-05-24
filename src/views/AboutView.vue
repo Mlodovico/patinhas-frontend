@@ -11,9 +11,13 @@
 </template>
 
 <style>
-    .about h1 {
-      font-size: 16px;
-    }
+.about {
+  padding: 20px;
+}
+.about h1 {
+  font-size: 16px;
+}
+
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;

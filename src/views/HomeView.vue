@@ -8,7 +8,7 @@
         <h1 class="text-3xl font-bold text-center pt-5">
           Bem-vindo ao PetShop Patinhas - O Paraíso dos Cuidados Caninos!
         </h1>
-        <p>
+        <p class="pt-5">
           Desde 2019, o PetShop Patinhas se dedica a transformar cada visita de seu cãozinho em uma experiência de
           carinho
           e cuidado incomparáveis. Localizado no coração da cidade, somos apaixonados por proporcionar o melhor em
@@ -23,10 +23,10 @@
           especialistas
           treinados, que tratam cada cão com o amor e o cuidado que ele merece.
         </p>
-        <p>
+        <p class="text-xl pt-4">
           Nossos Serviços:
         </p>
-        <ul class="list-disc">
+        <ul class="list-disc pt-4">
           <li>
             Lavagem Completa: Utilizamos shampoos e condicionadores especialmente formulados para diferentes tipos de
             pelagem e necessidades específicas, garantindo uma limpeza profunda e segura.
@@ -43,10 +43,10 @@
             ou danificadas, deixando seu cãozinho com uma aparência saudável e brilhante.
           </li>
         </ul>
-        <h4 class="text-xl pt-10">
+        <h4 class="text-xl pt-4">
           Por Que Escolher o PetShop Bela Pata?
         </h4>
-        <ul class="list-disc">
+        <ul class="list-disc pt-4">
           <li>
             Experiência e Tradição: Desde nossa inauguração, acumulamos anos de experiência e uma clientela fiel que
             confia em nosso trabalho.
@@ -67,18 +67,21 @@
             do seu pet.
           </li>
         </ul>
-
-        Venha nos Visitar!
-        <p>
+        <p class="pt-4">
           No PetShop Patinhas, acreditamos que cada cão merece um tratamento especial. Traga seu amigo peludo para uma
           visita e descubra por que somos a escolha certa para os cuidados com seu cão. Estamos sempre prontos para
           recebê-los com um sorriso e um atendimento de excelência.
 
           Visite-nos e veja de perto como transformamos cada banho e tosa em um momento de alegria e cuidado!
         </p>
-
-        PetShop Patinhas
-        Seu pet merece o melhor desde 2019.
+        <div class="pt-4">
+          <p>
+            PetShop Patinhas
+          </p>
+          <p>
+            Seu pet merece o melhor desde 2019.
+          </p>
+        </div>
 
       </article>
       <div class="separator"></div>

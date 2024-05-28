@@ -15,49 +15,25 @@ export const handleClickSignIn = () => {
 
 </script>
 <template>
-    <div class="app-header">
-        <div class="logo">
-            <h1>Patinhas</h1>
+    <header class="bg-red-600 p-4 text-white flex justify-between items-center">
+        <div class="flex items-center">
+            <!-- <img src="@/assets" alt="Logo" class="h-8 mr-3"> -->
+            <h1 class="text-xl font-bold">Patinhas</h1>
         </div>
-        <div class="buttons">
-            <button @click="handleClickLogin()">Cadastrar</button>
-            <button>Logar</button>
-        </div>
-        <LogInModal v-if='showLogInModal' @close='handleClickLogin()'></LogInModal>
-    </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li class="rounded-full bg-white text-red-600 px-4 py-2">
+                    <a href="#" class="font-bold">
+                        Login
+                    </a>
+                </li>
+                <li class="rounded-full bg-white text-red-600 px-4 py-2">
+                    <a href="#" class="font-bold">
+                        Cadastrar
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </template>
-<style>
-.app-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background: #ec1f12;
-    height: 4rem;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    margin-right: 10px;
-}
-
-.buttons button {
-    border: none;
-    background: #ec1f12;
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.5;
-    transition: 3s;
-}
-</style>
+<style></style>

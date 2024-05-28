@@ -7,6 +7,7 @@ import { FaFlag, RiZhihuFill, IoLogoGithub } from 'oh-vue-icons/icons'
 
 import App from './App.vue'
 import router from './router'
+import './main.css'
 
 addIcons(FaFlag, RiZhihuFill, IoLogoGithub)
 

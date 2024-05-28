@@ -3,8 +3,8 @@
 
 <template>
   <main>
-    <div class="description">
-      <h1>
+    <div class="p-4  text-white">
+      <h1 class="text-3xl font-bold underline">
         Bem-vindo ao PetShop Patinhas - O Paraíso dos Cuidados Caninos!
       </h1>
       <p>
@@ -21,31 +21,36 @@
         treinados, que tratam cada cão com o amor e o cuidado que ele merece.
       </p>
       <p>
-
-        Lavagem Completa: Utilizamos shampoos e condicionadores especialmente formulados para diferentes tipos de
-        pelagem
-        e necessidades específicas, garantindo uma limpeza profunda e segura.
-        Tosa Personalizada: Seja uma tosa higiênica, estética ou uma preparação especial para competições, nosso time
-        está
-        pronto para realizar qualquer estilo com perfeição.
-        Hidratação e Tratamentos Especiais: Oferecemos tratamentos de hidratação e revitalização para pelagens
-        ressecadas
-        ou danificadas, deixando seu cãozinho com uma aparência saudável e brilhante.
-        Por Que Escolher o PetShop Bela Pata?
-        Experiência e Tradição: Desde nossa inauguração, acumulamos anos de experiência e uma clientela fiel que confia
-        em
-        nosso trabalho.
-        Ambiente Acolhedor: Criamos um ambiente seguro e confortável para que seu cãozinho se sinta à vontade durante
-        todo
-        o processo.
-        Equipe Apaixonada: Nossa equipe é formada por amantes de animais, comprometidos em oferecer um serviço
-        personalizado e atencioso.
-        Produtos de Alta Qualidade: Utilizamos apenas produtos testados e aprovados, garantindo a segurança e o
-        bem-estar
-        do seu pet.
-      </p>
-      <p>
-        Venha nos Visitar!
+        Nossos Serviços:
+      <ul>
+        <li>
+          Lavagem Completa: Utilizamos shampoos e condicionadores especialmente formulados para diferentes tipos de
+          pelagem e necessidades específicas, garantindo uma limpeza profunda e segura.
+        </li>
+        <li>
+          Tosa Personalizada: Seja uma tosa higiênica, estética ou uma preparação especial para competições, nosso time
+          está
+          pronto para realizar qualquer estilo com perfeição.
+        </li>
+        <li>
+          Hidratação e Tratamentos Especiais: Oferecemos tratamentos de hidratação e revitalização para pelagens
+          ressecadas
+          ou danificadas, deixando seu cãozinho com uma aparência saudável e brilhante.
+        </li>
+      </ul>
+      Por Que Escolher o PetShop Bela Pata?
+      Experiência e Tradição: Desde nossa inauguração, acumulamos anos de experiência e uma clientela fiel que confia
+      em
+      nosso trabalho.
+      Ambiente Acolhedor: Criamos um ambiente seguro e confortável para que seu cãozinho se sinta à vontade durante
+      todo
+      o processo.
+      Equipe Apaixonada: Nossa equipe é formada por amantes de animais, comprometidos em oferecer um serviço
+      personalizado e atencioso.
+      Produtos de Alta Qualidade: Utilizamos apenas produtos testados e aprovados, garantindo a segurança e o
+      bem-estar
+      do seu pet.
+      Venha nos Visitar!
       </p>
       <p>
         No PetShop Patinhas, acreditamos que cada cão merece um tratamento especial. Traga seu amigo peludo para uma
@@ -86,11 +91,6 @@
   justify-content: center;
   height: 100vh;
   padding: 20px;
-}
-
-.description h1 {
-  font-size: 28px;
-  text-align: center;
 }
 
 .separator {

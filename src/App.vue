@@ -7,7 +7,7 @@ import Header from './components/Header.vue';
   <Header></Header>
 
   <div class="">
-    <div class="snap-x snap-mandatory overflow-x-scroll flex space-x-2">
+    <div class="snap-x overflow-x-scroll flex space-x-2">
       <div class="snap-start shrink-0 w-64 h-64">
         <img src="@/assets/pexels-egalaxy.jpg" alt="Image 1" class="w-full h-full object-cover">
       </div>

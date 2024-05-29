@@ -22,13 +22,13 @@ export const handleClickSignIn = () => {
             <ul class="flex space-x-4">
                 <li>
                     <a href="#"
-                        class="font-bold rounded-full bg-white text-red-600 px-4 py-2 transition-colors duration-300 hover:bg-gray-600">
+                        class="font-bold rounded-full bg-white text-red-600 px-4 py-2 transition-colors duration-1000 hover:bg-gray-400">
                         Login
                     </a>
                 </li>
                 <li>
                     <a href="#"
-                        class="font-bold rounded-full bg-white text-red-600 px-4 py-2 transition-colors duration-300 hover:bg-gray-600">
+                        class="font-bold rounded-full bg-white text-red-600 px-4 py-2 transition-colors duration-1000 hover:bg-gray-400">
                         Cadastrar
                     </a>
                 </li>

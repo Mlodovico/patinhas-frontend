@@ -1,5 +1,5 @@
 <script lang="ts">
-import { reactive } from 'vue'
+import { defineComponent, reactive } from 'vue'
 
 export const showLogInModal = reactive({ value: false })
 export const showSignInModal = reactive({ value: false })

@@ -1,16 +1,21 @@
 <template>
-    <div class="logInModal" @click="handleClickLogin">
-        <div class="modal">
-            <div class="io-close-circle-outline">
+    <div class="w-full h-full fixed top-0 left-0 bg-black/50 flex justify-center items-center"
+        @click="handleClickLogin">
+        <div class="bg-white rounded-lg">
+            <div class="top-5 right-5 bg-black">
                 <VIcon name="close" scale="1.5" />
             </div>
-            <div class="form">
-                <h1>Acessar sua conta</h1>
-                <p>E-mail ou CPF</p>
-                <input v-model="email" placeholder="E-mail ou CPF">
-                <p>Senha</p>
-                <input v-model="password" type="password" placeholder="Senha">
-                <button @click="handleClickLogin">Entrar</button>
+            <div class="p-20 text-red-600 font-bold flex flex-col">
+                <h1 class="text-3xl text-center pb-5">Acessar sua conta</h1>
+                <p class="font-bold">E-mail ou CPF</p>
+                <input class="my-3 p-2 border-gray-500 border-2 rounded-md h-12" v-model="email"
+                    placeholder="E-mail ou CPF">
+                <p class="font-bold">Senha</p>
+                <input class="my-3 p-2 border-gray-500 border-2 rounded-md h-12" v-model="password" type="password"
+                    placeholder="Senha">
+                <button
+                    class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-800 transition-colors duration-1000"
+                    @click="handleClickLogin">Entrar</button>
             </div>
         </div>
     </div>
@@ -29,65 +34,4 @@ const handleClickLogin = () => {
 }
 </script>
 
-<style>
-.logInModal {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.close-button {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-}
-
-.close-button button {
-    width: 100px;
-    height: 30px;
-    border-radius: 4px;
-    color: black
-}
-
-.modal {
-    background: white;
-    border-radius: 12px;
-    color: black;
-}
-
-.form {
-    padding: 3rem;
-}
-
-.form p {
-    margin-top: 15px;
-}
-
-.form input {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid gray;
-    padding: 8px;
-}
-
-.form button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50px;
-    margin-top: 15px;
-    border-radius: 4px;
-    border: 1px solid red;
-    background: red;
-    font-weight: 600;
-        color: azure;
-        font-size: 18px;
-}
-</style>
+<style></style>

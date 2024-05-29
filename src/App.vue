@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Header from './components/Header.vue';
+import LogInModal from './components/LogInModal.vue';
 
 </script>
 <template>
   <Header></Header>
+  <LogInModal />
 
   <div class="">
     <div class="snap-x overflow-x-scroll flex space-x-2">

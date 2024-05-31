@@ -2,8 +2,8 @@
     <div class="w-full h-full fixed top-0 left-0 bg-black/50 flex justify-center items-center"
         @click="handleClickLogin">
         <div class="bg-white rounded-lg">
-            <div class="top-5 right-5 bg-black">
-                <VIcon name="close" scale="1.5" />
+            <div class="m-5top-5 right-5 w-full h-8">
+                <v-icon name="fa-beer" class="text-red-600"></v-icon>
             </div>
             <div class="p-20 text-red-600 font-bold flex flex-col">
                 <h1 class="text-3xl text-center pb-5">Acessar sua conta</h1>

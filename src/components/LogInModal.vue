@@ -3,7 +3,9 @@
         @click="handleClickLogin">
         <div class="bg-white rounded-lg">
             <div class="flex p-5 top-5 right-5 w-full justify-end h-8">
-                <v-icon name="fa-beer" class="text-red-600 w-9 h-9"></v-icon>
+                <button @click="handleClickClose" class="text-red-600">
+                    <v-icon name="io-close-circle-sharp" class="text-red-600" scale="1.5" />
+                </button>
             </div>
             <div class="p-20 text-red-600 font-bold flex flex-col">
                 <h1 class="text-3xl text-center pb-5">Acessar sua conta</h1>
@@ -31,6 +33,11 @@ const password = ref('');
 const handleClickLogin = () => {
     console.log(email.value, password.value)
     showLogInModal.value = false
+}
+
+const handleClickClose = () => {
+    showLogInModal.value = false
+    console.log("close")
 }
 </script>
 

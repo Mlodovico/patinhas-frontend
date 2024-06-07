@@ -1,14 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import Header from './components/Header.vue';
-import LogInModal from './components/LogInModal.vue';
-
-const isModalVisible = ref(false);
 
 </script>
 <template>
   <Header></Header>
-  <LogInModal :isVisible="isModalVisible" />
 
   <div class="">
     <div class="snap-x overflow-x-scroll flex space-x-2">

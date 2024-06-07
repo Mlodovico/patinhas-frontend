@@ -24,30 +24,23 @@
 </template>
 
 <script setup lang="ts">
-import { showLogInModal } from './Header.vue'
 import { defineProps, defineEmits, ref } from 'vue'
 
-const email = ref('');
-const password = ref('');
-
-const handleClickLogin = () => {
-    console.log(email.value, password.value)
-    showLogInModal.value = false
-}
-
-const handleClickClose = () => {
-    showLogInModal.value = false;
-}
-
+const emit = defineEmits(['close']);
 const props = defineProps<{
     isVisible: boolean
 }>();
 
-const emit = defineEmits(['close']);
+const email = ref('');
+const password = ref('');
+const handleClickLogin = () => {
+    console.log(email.value, password.value)
+}
 
-const close = () => {
+const handleClickClose = () => {
     emit('close');
-};
+}
+
 </script>
 
 <style></style>

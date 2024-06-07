@@ -1,16 +1,18 @@
-<script lang="ts">
-import { defineComponent, reactive } from 'vue'
+<script setup lang="ts">
+import LogInModal from '../components/LogInModal.vue';
+import { ref } from 'vue'
 
-export const showLogInModal = reactive({ value: false })
-export const showSignInModal = reactive({ value: false })
-export const handleClickLogin = () => {
-    showLogInModal.value = !showLogInModal.value
+const isModalVisible = ref(false)
+
+const handleClickLogin = () => {
+    isModalVisible.value = true;
 }
 
-export const handleClickSignIn = () => {
-    showSignInModal.value = !showSignInModal.value
+const handleClickSignIn = () => {
+    isModalVisible.value = true
 }
 
+console.log(isModalVisible.value);
 </script>
 <template>
     <header class="bg-red-600 p-4 text-white flex justify-between items-center">
@@ -21,19 +23,20 @@ export const handleClickSignIn = () => {
         <nav>
             <ul class="flex space-x-4">
                 <li>
-                    <a href="#"
+                    <button @click="handleClickLogin"
                         class="font-bold rounded-full bg-white text-red-600 px-4 py-2 transition-colors duration-1000 hover:bg-gray-400">
                         Login
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="#"
+                    <button @click="handleClickSignIn"
                         class="font-bold rounded-full bg-white text-red-600 px-4 py-2 transition-colors duration-1000 hover:bg-gray-400">
                         Cadastrar
-                    </a>
+                    </button>
                 </li>
             </ul>
         </nav>
     </header>
+    <LogInModal :isVisible="isModalVisible" />
 </template>
 <style></style>

@@ -12,7 +12,10 @@ const handleClickSignIn = () => {
     isModalVisible.value = true
 }
 
-console.log(isModalVisible.value);
+const handleClose = () => {
+    isModalVisible.value = false;
+}
+
 </script>
 <template>
     <header class="bg-red-600 p-4 text-white flex justify-between items-center">
@@ -37,6 +40,6 @@ console.log(isModalVisible.value);
             </ul>
         </nav>
     </header>
-    <LogInModal :isVisible="isModalVisible" />
+    <LogInModal :isVisible="isModalVisible" @close="handleClose" />
 </template>
 <style></style>

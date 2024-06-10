@@ -1,19 +1,27 @@
 <script setup lang="ts">
-import LogInModal from '../components/LogInModal.vue';
 import { ref } from 'vue'
 
-const isModalVisible = ref(false)
+import LogInModal from '../components/LogInModal.vue';
+import RegisterModal from '../components/RegisterModal.vue';
+
+
+const isLoginModalVisible = ref(false)
+const isRegisterModalVisible = ref(false)
 
 const handleClickLogin = () => {
-    isModalVisible.value = true;
+    isLoginModalVisible.value = true;
 }
 
 const handleClickSignIn = () => {
-    isModalVisible.value = true
+    isRegisterModalVisible.value = true
 }
 
-const handleClose = () => {
-    isModalVisible.value = false;
+const handleLoginModalClose = () => {
+    isLoginModalVisible.value = false;
+}
+
+const handleRegisterModalClose = () => {
+    isRegisterModalVisible.value = false;
 }
 
 </script>
@@ -40,6 +48,7 @@ const handleClose = () => {
             </ul>
         </nav>
     </header>
-    <LogInModal :isVisible="isModalVisible" @close="handleClose" />
+    <LogInModal :isVisible="isLoginModalVisible" @close="handleLoginModalClose" />
+    <RegisterModal :isVisible="isRegisterModalVisible" @close="handleRegisterModalClose" />
 </template>
 <style></style>

@@ -9,15 +9,21 @@
             </div>
             <div class="px-20 py-10 text-red-600 font-bold flex flex-col">
                 <h1 class="text-3xl text-center pb-5">Cadastre sua conta</h1>
-                <p class="font-bold">E-mail ou CPF</p>
+                <p class="font-bold">CPF</p>
+                <input class="my-3 p-2 border-gray-500 border-2 rounded-md h-12" type="number"
+                    placeholder="Digite seu CPF">
+                <p class="font-bold">E-mail</p>
                 <input class="my-3 p-2 border-gray-500 border-2 rounded-md h-12" v-model="email"
-                    placeholder="E-mail ou CPF">
-                <p class="font-bold">Senha</p>
+                    placeholder="Digite seu E-mail">
+                <p class="font-bold">Nova senha</p>
                 <input class="my-3 p-2 border-gray-500 border-2 rounded-md h-12" v-model="password" type="password"
-                    placeholder="Senha">
+                    placeholder="Digite sua nova senha">
+                <p class="font-bold">Nova senha novamente</p>
+                <input class="my-3 p-2 border-gray-500 border-2 rounded-md h-12" v-model="passwordAgain" type="password"
+                    placeholder="Digite sua nova senha novamente">
                 <button
                     class="bg-red-600 text-white px-4 py-2 mt-5 rounded-md hover:bg-red-800 transition-colors duration-1000"
-                    @click="handleClickLogin">Entrar</button>
+                    @click="handleClickRegister">Entrar</button>
             </div>
         </div>
     </div>
@@ -33,7 +39,11 @@ const props = defineProps<{
 
 const email = ref('');
 const password = ref('');
-const handleClickLogin = () => {
+const passwordAgain = ref('');
+const handleClickRegister = () => {
+    if (password.value === passwordAgain.value) {
+        console.log("DEU BOM")
+    }
     console.log(email.value, password.value)
 }
 
